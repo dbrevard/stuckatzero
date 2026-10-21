@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StuckAtZero: Why is my YouTube Short stuck at 0 views?</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:760px;margin:0 auto;padding:20px;background:#0f0f12;color:#eee}
+h1{font-size:28px;margin:.2em 0}.sub{color:#aaa}.card{background:#1b1b22;border-radius:12px;padding:18px;margin:16px 0}
+input[type=text]{width:100%;padding:12px;border-radius:8px;border:1px solid #444;background:#111;color:#eee;font-size:16px;box-sizing:border-box}
+button{background:#ff3b3b;color:#fff;border:0;padding:12px 18px;border-radius:8px;font-size:16px;cursor:pointer;margin-top:10px}
+.q{margin:12px 0;padding-bottom:10px;border-bottom:1px solid #2a2a33}.q b{display:block;margin-bottom:4px}.hint{color:#999;font-size:13px}
+label{margin-right:14px}.score{font-size:48px;font-weight:800}.ok{color:#4ade80}.warn{color:#facc15}.bad{color:#f87171}
+.lock{filter:blur(5px);user-select:none;pointer-events:none}.hidden{display:none}img.thumb{max-width:120px;border-radius:8px;float:right;margin-left:10px}
+li{margin:6px 0}.small{font-size:12px;color:#888}
+</style></head><body>
+<div style="font-weight:800;color:#ff3b3b;letter-spacing:.5px">STUCKATZERO</div><h1>Why is my Short stuck at 0 views?</h1>
+<div class="sub">Paste your Short and answer 5 quick Studio checks. Free score and most likely cause in 60 seconds.</div>
+
+<div class="card"><b>1. Paste your Short's link</b>
+<input type="text" id="url" placeholder="https://youtube.com/shorts/...">
+<button id="fetchBtn">Check it</button><div id="meta" class="hint" style="margin-top:10px"></div></div>
+
+<div class="card" id="quiz"><b>2. Five checks in YouTube Studio</b> <span class="hint">(open Studio &gt; Content &gt; your Short)</span>
+<div id="qs"></div><button id="scoreBtn">Get my free score</button></div>
+
+<div class="card hidden" id="result"><div class="score" id="score"></div><div id="cause"></div><div id="autoNotes"></div></div>
+
+<div class="card hidden" id="paid"><b>Full Fix Plan ($5 one-time)</b>
+<div id="planPreview">Your plan includes: step-by-step fixes for your cause, a rewritten title and hook, a re-upload checklist, a 7-day posting schedule, and what to send @TeamYouTube.</div>
+<button id="unlockBtn" disabled style="opacity:.6;cursor:not-allowed">Coming soon: payments launching</button>
+<div class="small">The $5 fix plan isn't on sale yet. Your free score above is the full free result.</div></div>
+
+<p class="small">Not affiliated with YouTube or Google. Uses only public video info (YouTube oEmbed) plus your answers. We can't see your private Studio analytics.</p>
+<script src="app.js"></script></body></html>
